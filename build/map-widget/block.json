@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "traumardr/map-block",
+  "version": "1.0.5",
+  "title": "TraumaRadar Map",
+  "category": "widgets",
+  "icon": "airplane",
+  "description": "Toon traumahelikoptervlucht met kaart",
+  "example": {},
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "html": false,
+    "typography": {
+      "fontSize": true
+    },
+    "date": true
+  },
+  "attributes": {
+    "flightUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "showDate": {
+      "type": "boolean",
+      "default": true
+    },
+    "showMap": {
+      "type": "boolean",
+      "default": true
+    },
+    "flightTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "flightTimeStamp": {
+      "type": "string",
+      "default": ""
+    },
+    "flightImage": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "traumardr",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
